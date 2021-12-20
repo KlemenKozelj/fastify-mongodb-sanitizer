@@ -1,0 +1,28 @@
+{
+  "name": "fastify-mongodb-sanitizer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --trace-warnings test/index.js",
+    "lint": "node ./node_modules/.bin/eslint --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KlemenKozelj/fastify-mongodb-sanitizer.git"
+  },
+  "author": "Klemen Kozelj, klemen.kozelj@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KlemenKozelj/fastify-mongodb-sanitizer/issues"
+  },
+  "homepage": "https://github.com/KlemenKozelj/fastify-mongodb-sanitizer#readme",
+  "dependencies": {
+    "fastify-plugin": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.2.0",
+    "eslint-config-google": "^0.14.0",
+    "fastify": "^3.24.0"
+  }
+}
