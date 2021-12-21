@@ -1,7 +1,14 @@
 {
   "name": "fastify-mongodb-sanitizer",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Fastify plugin for sanitizing client requests.",
+  "keywords": [
+    "fastify",
+    "fastify-plugin",
+    "mongodb",
+    "sanitizer",
+    "security"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "node --trace-warnings test/index.js",

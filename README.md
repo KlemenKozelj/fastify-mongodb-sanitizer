@@ -1,6 +1,6 @@
 # fastify-mongodb-sanitizer
 
-![CI/CD](https://github.com/KlemenKozelj/fastify-mongodb-sanitizer/actions/workflows/main.yml/badge.svg)
+![CI/CD](https://github.com/KlemenKozelj/fastify-mongodb-sanitizer/actions/workflows/main.yml/badge.svg) ![Vulnerabilities](https://snyk.io/test/github/KlemenKozelj/fastify-mongodb-sanitizer/badge.svg)
 
 Slim, well tested and zero dependencies Fastify plugin which through middleware sanitizes all user server inputs to increase overall security by preventing potential MongoDB database query injection attacks.
 To further tighten the security please consider disabling server-side execution of JavaScript code or be extra cautious when running `$where` and `MapReduce` commands, taken from [MongoDB FAQ](https://docs.mongodb.com/v4.2/faq/fundamentals/#javascript).
