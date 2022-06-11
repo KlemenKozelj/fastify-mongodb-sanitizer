@@ -2,7 +2,6 @@ const fastify = require('fastify');
 const assert = require('assert');
 const sanitizer = require('../src/sanitizer');
 
-
 assert(sanitizer(1) === 1, 'Primitive type number is ignored.');
 assert(sanitizer('') === '', 'Empty string is ignored.');
 assert(sanitizer('test') === 'test', 'Normal string is ignored.');
