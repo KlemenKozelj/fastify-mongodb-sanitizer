@@ -1,6 +1,6 @@
 {
   "name": "fastify-mongodb-sanitizer",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Fastify plugin for sanitizing client requests.",
   "keywords": [
     "fastify",
@@ -25,11 +25,11 @@
   },
   "homepage": "https://github.com/KlemenKozelj/fastify-mongodb-sanitizer#readme",
   "dependencies": {
-    "fastify-plugin": "^4.3.0"
+    "fastify-plugin": "^4.4.0"
   },
   "devDependencies": {
-    "eslint": "^8.25.0",
+    "eslint": "^8.29.0",
     "eslint-config-google": "^0.14.0",
-    "fastify": "^4.9.2"
+    "fastify": "^4.10.2"
   }
 }
