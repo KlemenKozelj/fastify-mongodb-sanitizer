@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/KlemenKozelj/fastify-mongodb-sanitizer#readme",
   "dependencies": {
-    "fastify-plugin": "^4.4.0"
+    "fastify-plugin": "^4.5.0"
   },
   "devDependencies": {
     "eslint": "^8.29.0",
