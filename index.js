@@ -16,5 +16,5 @@ module.exports = fastifyPlugin(async (fastify, {params=true, query=true, body=tr
       });
 }, {
   name: 'fastify-mongodb-sanitizer',
-  fastify: '5.x',
+  fastify: '4.x',
 });
