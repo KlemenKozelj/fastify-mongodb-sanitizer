@@ -7,7 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.2.3] - 2024-09-18
 ### Changed
 - improved tests
-- tested with fastify v5
+- upgraded NPM dependencies
+- validated compatibility with Fastify v5
+- updated Eslint configuration
 
 ## [1.2.2] - 2023-07-20
 ### Changed
