@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+### Fixed
+- Removed `npm` from production dependencies
+- Corrected `sanatize` typo to `sanitize` throughout codebase
+- Fixed README incorrectly claiming zero dependencies
+- Fixed ESLint globals configured for browser instead of Node.js
+- Added CI triggers for push and pull_request events (previously only ran on release)
+- Upgraded GitHub Actions from v2 to v4
+- Added Node.js version matrix (18, 20, 22) to CI
+- Added tests for disabled sanitization options and `$`-prefixed value stripping
+- Server now properly closed after tests
+
 ## [1.2.5] - 2025-02-21
 ### Changed
 - upgraded NPM dependencies
