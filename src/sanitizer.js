@@ -2,7 +2,7 @@ const isValueObject = (o) => typeof o === 'object' && o !== null;
 
 const startsWith$ = (v) => typeof v === 'string' && v.startsWith('$');
 
-const sanatizeValues = (inp) => {
+const sanitizeValues = (inp) => {
   if (startsWith$(inp)) return undefined;
 
   if (!isValueObject(inp)) return inp;
@@ -10,7 +10,7 @@ const sanatizeValues = (inp) => {
   if (Array.isArray(inp)) {
     return inp.reduce((arrR, v) => {
       if (isValueObject(v)) {
-        arrR.push(sanatizeValues(v));
+        arrR.push(sanitizeValues(v));
         return arrR;
       }
       if (!startsWith$(v)) {
@@ -27,7 +27,7 @@ const sanatizeValues = (inp) => {
       })
       .reduce((objR, [k, v]) => {
         if (isValueObject(v)) {
-          objR[k] = sanatizeValues(v);
+          objR[k] = sanitizeValues(v);
           return objR;
         }
         objR[k] = v;
@@ -35,4 +35,4 @@ const sanatizeValues = (inp) => {
       }, {});
 };
 
-module.exports = sanatizeValues;
+module.exports = sanitizeValues;

@@ -1,17 +1,17 @@
 const fastifyPlugin = require('fastify-plugin');
-const sanatize = require('./src/sanitizer');
+const sanitize = require('./src/sanitizer');
 
 module.exports = fastifyPlugin(async (fastify, { params = true, query = true, body = true }) => {
   fastify
     .addHook('preHandler', async (req) => {
       if (params) {
-        req.params = sanatize(req.params);
+        req.params = sanitize(req.params);
       }
       if (query) {
-        req.query = sanatize(req.query);
+        req.query = sanitize(req.query);
       }
       if (body) {
-        req.body = sanatize(req.body);
+        req.body = sanitize(req.body);
       }
     });
 }, {
